@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/all_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+
+
+        <ImageView
+            android:id="@+id/coverImageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/add_image_selector"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/trail_img" />
+
+        <ProgressBar
+            android:id="@+id/coverImageProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/editCoverImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="@string/edit_square"
+            android:textSize="25dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/addMultimediaLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/addImage"
+                android:textSize="20dp">
+
+                <ImageView
+                    android:id="@+id/image2ImageView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/add_image_selector"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/image2TextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/add_image_selector"
+                    android:gravity="center"
+                    android:text="@string/addImage"
+                    android:textColor="@color/icon_view_background"
+                    android:textSize="25dp" />
+
+                <ProgressBar
+                    android:id="@+id/image2ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/addImage"
+                android:textSize="20dp">
+
+                <ImageView
+                    android:id="@+id/image3ImageView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/add_image_selector"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/image3TextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/add_image_selector"
+                    android:gravity="center"
+                    android:text="@string/addImage"
+                    android:textColor="@color/icon_view_background"
+                    android:textSize="25dp" />
+
+                <ProgressBar
+                    android:id="@+id/image3ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/addImage"
+                android:textSize="20dp">
+
+                <ImageView
+                    android:id="@+id/image4ImageView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/add_image_selector"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/image4TextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/add_image_selector"
+                    android:gravity="center"
+                    android:text="@string/addImage"
+                    android:textColor="@color/icon_view_background"
+                    android:textSize="25dp" />
+
+                <ProgressBar
+                    android:id="@+id/image4ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/addImage"
+                android:textSize="20dp">
+
+                <ImageView
+                    android:id="@+id/image5ImageView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/add_image_selector"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/image5TextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/add_image_selector"
+                    android:gravity="center"
+                    android:text="@string/addImage"
+                    android:textColor="@color/icon_view_background"
+                    android:textSize="25dp" />
+
+                <ProgressBar
+                    android:id="@+id/image5ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/imageErrorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/image_upload_error"
+                android:textColor="@color/text_light"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/imageUploadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@color/theme_yellow_color"
+            android:includeFontPadding="false"
+            android:minHeight="0dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="8dp"
+            android:text="@string/upload"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp">
+
+
+            <EditText
+                android:id="@+id/youtubeUrlEditText"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_selector"
+                android:hint="Enter Youtube Link"
+                android:inputType="textUri"
+                android:paddingBottom="7dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="7dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@color/text_dark"
+                android:textColorHint="@color/text_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/youtubeUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/youtubeUrlEditText"
+                android:layout_alignTop="@+id/youtubeUrlEditText"
+                android:layout_toRightOf="@id/youtubeUrlEditText"
+                android:background="@color/theme_yellow_color"
+                android:padding="7dp"
+                android:text="@string/addYoutubeLink"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/youtubeProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/youtubeUpload"
+                android:layout_alignTop="@id/youtubeUpload"
+                android:layout_toRightOf="@id/youtubeUrlEditText"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

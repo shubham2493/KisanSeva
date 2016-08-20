@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/login_page"
+              android:gravity="center"
+              android:orientation="vertical">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="bottom|center"
+                  android:layout_marginTop="350dp"
+                  android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/loginLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/loginBottomLayout"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/usernameIconTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/emailEditText"
+                android:background="@color/login_icon_background_clr"
+                android:paddingBottom="12dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/username_icon"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/usernameIconTextView"
+                android:background="@drawable/edittext_selector"
+                android:hint="@string/email"
+                android:includeFontPadding="false"
+                android:inputType="textWebEmailAddress"
+                android:paddingBottom="12dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="12dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/passwordIconTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/passwordEditText"
+                android:layout_below="@id/emailEditText"
+                android:layout_marginTop="5dp"
+                android:background="@color/login_icon_background_clr"
+                android:paddingBottom="14dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="14dp"
+                android:text="@string/password_icon"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"/>
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailEditText"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/passwordIconTextView"
+                android:background="@drawable/edittext_selector"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingBottom="10dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="12dp"
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordEditText"
+                android:layout_marginBottom="0dp"
+
+                android:background="@drawable/red_button_selector"
+                android:minHeight="0dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/login"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"/>
+
+            <Button
+                android:id="@+id/forgotPasswordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:background="@android:color/transparent"
+                android:minHeight="0dp"
+                android:text="@string/forgot_password"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/loginBottomLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/orange_button_selector"
+                android:minHeight="0dp"
+                android:paddingBottom="9dp"
+                android:paddingTop="9dp"
+                android:text="@string/register"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/connectViaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registerButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                android:minHeight="0dp"
+                android:text="@string/connect_via"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/connectViaTextView"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/facebookIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_shape_blue"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/facebook_icon"
+                    android:textColor="@color/facebook_blue_button"
+                    android:textSize="50dp"/>
+
+                <TextView
+                    android:id="@+id/gplusIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circle_shape_red"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="@string/gplus_icon"
+                    android:textColor="@color/google_red_button"
+                    android:textSize="50dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

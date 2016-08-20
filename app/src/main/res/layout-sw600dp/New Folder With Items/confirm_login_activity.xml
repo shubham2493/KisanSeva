@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_background">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/theme_yellow_color"
+            android:gravity="center"
+            android:text="Confirm Email"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/confirmEmailBody"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@color/all_background"
+            android:gravity="top"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/confirm_email"
+            android:textColor="@color/icon_color"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/backToLoginButton"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/theme_yellow_color"
+            android:gravity="center"
+            android:minWidth="0dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="BACK TO LOGIN"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="" />
+
+    </LinearLayout>
+</ScrollView>

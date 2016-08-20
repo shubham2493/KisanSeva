@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/fstpage"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.MainActivity">
+
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="We are here to help you with
+farming-related problems that you
+might be facing during daily work. it
+might be related to seed and fertilizers
+subsidies,soil testing center and
+insurance policy."
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/startedbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Get Started"
+        android:id="@+id/startedbutton"
+        android:textColor="@color/greencolor"
+        android:background="@drawable/rounded_button"
+        android:padding="6dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"></Button>
+</RelativeLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/all_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/saveButton"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <ImageView
+                android:id="@+id/coverPicImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_cover" />
+
+
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/badge_click"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_gravity="bottom|right"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:clickable="true"-->
+                <!--android:src="@drawable/badge_button" />-->
+
+
+            <include
+                android:id="@+id/badge_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:clickable="true"
+                layout="@layout/profile_badge_layout" />
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/image_placeholder"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/user"
+                app:border_color="#ffffff"
+                app:border_width="2dp" />
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/firstNameFeild"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_selector"
+
+                        android:gravity="left"
+                        android:hint="First Name"
+                        android:inputType="textCapSentences|textPersonName"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="16dp" />
+
+
+                    <EditText
+                        android:id="@+id/lastNameFeild"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/edittext_selector"
+                        android:gravity="left"
+                        android:hint="Last Name"
+                        android:inputType="textCapSentences|textPersonName"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/selectGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/dropdown"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/emailFeild"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_selector"
+
+                    android:gravity="left"
+                    android:hint="Email"
+                    android:inputType="textCapSentences|textEmailAddress"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/mobileFeild"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_selector"
+                    android:gravity="left"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dobFeild"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:background="@drawable/edittext_selector"
+                        android:editable="false"
+                        android:gravity="left"
+                        android:hint="Date Of Birth"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/calenderIcon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="8dp"
+                        android:text="@string/calender_icon"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/dobStatusCheckBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:checked="false"
+                    android:text="@string/dont_show_dob"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/bioFeild"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_selector"
+                    android:gravity="left"
+                    android:hint="Biography"
+                    android:inputType="textCapSentences|textLongMessage|textMultiLine"
+                    android:minLines="9"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/red_button_selector"
+        android:gravity="center"
+        android:maxHeight="0dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="5dp"
+        android:text="SAVE"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

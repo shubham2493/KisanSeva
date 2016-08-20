@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="0dp"
+    android:layout_marginTop="0dp"
+    android:background="@color/all_background"
+    android:orientation="vertical"
+    android:id="@+id/termsAndConditionLayout"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    >
+
+
+    <TextView
+        android:id="@+id/termsAndConditionHeading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center"
+        android:text="License - Terms And Conditions"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/termsAndConditionBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/edit_square_background"
+        android:maxLines="20"
+
+        android:scrollbars="vertical"
+        android:text="@string/terms_and_conditions"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:id="@+id/viewTermsLink"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="@string/terms_condition_link"
+        android:textColor="@color/link_color" />
+
+    <CheckBox
+        android:id="@+id/checkboxWeaklyNewsLetter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:checked="true"
+        android:text="@string/newsletter"
+        android:textSize="14dp" />
+
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_weight="0.5"
+        android:background="@color/theme_yellow_color"
+        android:minHeight="0dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/agree"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="@string/newsletter" />
+</LinearLayout>

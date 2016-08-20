@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/all_background"
+    android:paddingBottom="3dp">
+
+
+    <ImageView
+        android:id="@+id/trailImage"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/trail_img" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/image_gradient" />
+
+    <RelativeLayout
+        android:id="@+id/typeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/trailImage"
+        android:layout_marginTop="5dp"
+        android:background="@color/trail_type_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:id="@+id/trailType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="DRAFT"
+            android:paddingLeft="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/deleteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/trailType"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/delete_icon"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <ProgressBar
+            android:id="@+id/shareProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/deleteIcon"
+            android:layout_alignLeft="@id/deleteIcon"
+            android:layout_alignRight="@id/deleteIcon"
+            android:layout_alignTop="@id/deleteIcon"
+            android:layout_toRightOf="@id/trailType"
+            android:padding="0dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/addCheckInIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:text="@string/add_checkin_icon"
+        android:textColor="@android:color/white"
+        android:textSize="24dp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trailImage"
+        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:background="@color/orange_button" >
+
+        <TextView
+            android:id="@+id/trailName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="4dp"
+            android:minHeight="0dp"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="Trail Name"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/trailDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/trailOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:minHeight="0dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="Owner"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

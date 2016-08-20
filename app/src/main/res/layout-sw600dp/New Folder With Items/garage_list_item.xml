@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/badges_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="1dp"
+
+    >
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/stroke_border"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginBottom="-4dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginTop="-4dp"
+        card_view:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:id="@+id/listlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:clickable="true">
+
+            <RelativeLayout
+                android:id="@+id/imageLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/bikeimage"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/darker_gray"
+                    android:gravity="center"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/bikeimageicon"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@android:color/darker_gray"
+                    android:gravity="center"
+                    android:text="@string/bike_placeholder"
+                    android:textColor="@android:color/white"
+                    android:textSize="50dp"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/deleteIcon"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:text="@string/delete_icon"
+                android:textColor="@android:color/secondary_text_dark"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/bike_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/imageLayout"
+                android:text="Bike Brand"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bike_brand"
+                android:layout_below="@+id/bike_brand"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Model"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bike_brand"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/model"
+                android:text="Year"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

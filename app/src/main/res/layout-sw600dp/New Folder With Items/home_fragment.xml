@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.pulp.trailsofindia.ui.fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home_banner" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="50dp"
+                android:alpha=".6"
+                android:background="@color/orange_button"
+                android:gravity="center"
+                android:lines="2"
+                android:padding="7dp"
+                android:paddingLeft="10dp"
+                android:text="Everything about motorcycling \n and the trails less travelled"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/playIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:includeFontPadding="false"
+                android:minHeight="0dp"
+                android:text="@string/play_icon"
+                android:textColor="@android:color/white"
+                android:textSize="60sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/transparent"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/featuredLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/theme_home_yellow_color">
+
+        <TextView
+            android:id="@+id/homeScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/featured_list_title"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <ProgressBar
+            android:id="@+id/loadFeatured"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
